@@ -1,0 +1,26 @@
+
+
+<div class="container ">
+    <h3>Getting data from api's</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Population</th>
+                <th>Region</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let result of result; let i=index;">
+                <td>{{i+1}}</td>
+                <td>{{result.name}}</td>
+                <td>{{result.capital}}</td>
+                <td>{{result.population}}</td>
+                <td>{{result.region}}</td>
+            </tr>
+        </tbody>
+    </table>
+    {{result.name}}
+</div>

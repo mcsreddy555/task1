@@ -1,0 +1,10 @@
+
+
+
+<nav class="navbar bg-info">
+  <span style="color: white; font-size: 30px;">Task</span>
+</nav>
+<app-first [products]="productList"></app-first>
+<app-first-parent (newProduct)="addItem($event)"></app-first-parent>
+
+<router-outlet></router-outlet>

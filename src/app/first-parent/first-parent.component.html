@@ -1,0 +1,19 @@
+<div class="container">
+    <label>Add a product: <input type="text" 
+        
+        name="product.name" ngModel #name="ngModel" ></label>
+    <button (click)="addProduct(name.value)">Add to parent's list</button>
+
+
+    <div class="mb-4">
+        <div>
+            <ul style="list-style: none;">
+                <a routerLink="/second"><li>For Api Calls</li></a>
+                <a routerLink="/third"><li>Module Based Routing</li></a>
+            </ul>
+   
+        </div>
+    </div>
+</div>
+
+
